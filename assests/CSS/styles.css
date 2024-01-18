@@ -1,0 +1,89 @@
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.material-symbols-outlined {
+
+    vertical-align: middle;
+    line-height: 1px;
+}
+
+.navbar-brand > .material-symbols-outlined {
+
+    font-size: 40px;
+}
+
+.about > .material-symbols-outlined{
+    font-size: 50px;
+}
+
+/* 
+parent element > child element  */
+
+.card > img {    
+    height: 200px;
+    width:flex;
+
+}
+
+#map { 
+
+    height: 300px;
+}
+
+
+/* #sap{
+   max-width: 50%;
+   max-height: 50%;
+   
+}
+
+#sapp{
+    max-width: 50%;
+    max-height: 50%
+
+}
+#agile{
+    max-width: 50%;
+    max-height: 50%
+    
+
+}
+#dev{
+
+} */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: fit-content;
+  width: 80px;
+  outline: rgb(19, 50, 190);
+  background-size: 100%, 100%;
+  border-radius: 100%;
+  border: 10px solid rgb(19, 50, 190);
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{ 
+  content: '>';
+  font-weight: 900;
+  font-size: 50px;
+  color: rgb(19, 50, 255);
+}
+
+.carousel-control-prev-icon:after {
+
+
+  content: '<';
+  font-weight: 900;
+  font-size: 50px;
+  color: rgb(19, 50, 190);
+
+}
+

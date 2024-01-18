@@ -1,2 +1,420 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
 
+    <!-- BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- MONSTERRAT FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assests/CSS/styles.css">
+    <!-- GOOGLE ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- LEAFLEFT CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+    <div class="container-fluid px-0">
+         <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <span class="material-symbols-outlined">
+                account_circle
+                </span>
+            PORTFOLIO
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container px-3">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#badges">Badges</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="btn btn-primary btn-large" onclick="window.open('assests/images/Resume/Resume_2023.pdf','_blank')">Resume
+                    <span class="material-symbols-outlined">
+                      description
+                      </span>
+                </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+        </nav>
+        <!-- Hero -->
+        <header class="bg-light py-5">
+            <div class="container px-5">
+                <div class="row align-items-center">
+                    <!-- left side of header -->
+                    <div class="col-lg-8 col-xl-7 col-xxl-6"> 
+                        <div class="my-5">
+                            <h2 class="text-center fw-bold mb-2">Hello I am Angel Gomez,</h2>
+                            <h2 class="text-primary text-center fw-bold mb-2">B.S. in Computer Enginneering Technology</h2>
+                            <p class="lead text-muted mb-4 text-center">Curious about the world of technology.</p>
+                            <div class="d-grid gap-3 d-sn-flex justify-content-center">
+                                <a class="btn btn-primary btn-large text-uppercase" href="#about">Learn More
+                                    <span class="material-symbols-outlined">
+                                        info
+                                        </span>
+                                </a>
+                                <a class="btn btn-outline-primary btn-large text-uppercase" href="#projects">View My Work
+                                    <span class="material-symbols-outlined">
+                                        manage_search
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- rightside of header  -->
+                    <div class="col-xl-5 col-xxl-6 justify-content-center">
+                        <img class="img-fluid rounded-3 my-5" src="assests/images/computer.jpg" alt="Hero image">
+                    </div>
+                </div>             
+            </div>
+        </header>
+
+
+        <main>
+            <!-- about -->
+            <section id="about" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">About</h2>
+                        <p class="lead test-muted mb-5"> 
+                          Hello, I am Angel Gomez, a graduate of the University of Houston with a 
+                          Bachelor of Science in Computer Engineering. As a tech enthusiast, I am interested in 
+                          Cloud Development, Front-End Development, and Computer Hardware technologies.   
+                        </p>
+                        <div class="col-xl-5 col-xxl-6 justify-content-center">
+                          <img class="img-fluid rounded-3 my-5" src="assests/images/image.jpg" alt="Hero image">
+                      </div>
+                    </div>
+                    <div class="container mb-5">
+                        <div class="row">
+                            <div class="col-lg-4 mx-auto mb-5">
+                                <div class="d-flex mb-5 about">
+                                    <span class="material-symbols-outlined m-auto text-primary">
+                                        palette
+                                        </span>
+                                </div>
+                                <h5>Design</h5>
+                                <p class="text-mutted mb-0">A freelance WordPress developer promoting 
+                                  local businesses through web design and managing multiple websites using 
+                                  Open Source resources such as WP-Engine, ManageWP, Hostinger, and Godaddy. Additionally,
+                                   using Front-End progamming such as Html(intermediate), CSS(intermediate) and Javascript(beginner)</p>
+                            </div>
+                            <div class="col-lg-4 mx-auto mb-5">
+                                <div class="d-flex mb-5 about">
+                                    <span class="material-symbols-outlined m-auto text-primary">
+                                        cloud
+                                        </span>
+                                </div>
+                                <h5>Development</h5>
+                                <p class="text-mutted mb-0">AWS intermediate experience spinning up EC2 
+                                  instances, managing native VPCs, and uploading Terraform files through Lambda.
+                                   Additionally, practice with a localized low level hypervisor, Proxmox,
+                                   in order to gain on-premise experience using my Local Area Network.  </p>
+                            </div>
+                            <div class="col-lg-4 mx-auto mb-5">
+                                <div class="d-flex mb-5 about">
+                                    <span class="material-symbols-outlined m-auto text-primary">
+                                        computer
+                                        </span>
+                                </div>
+                                <h5>Hardware & Software</h5>
+                                <p class="text-mutted mb-0">  Working experience with computer hardware, debugging, 
+                                  and reprogaming devices as well as installing firmware.
+                                  Additionally, using Python and Linux to automate projects during my time in University. 
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of about -->
+                    <hr>
+            <!-- Project -->
+            <section class="text-center py-5" id="projects">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Projects</h2>
+                        <p class="lead test-muted mb-5"> 
+                            view my latest projects.
+                        </p>
+                    </div>
+                </div>  
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card h-100 shadow-lg border-0 bg-light">
+                                <img src="assests/images/x.jpg" alt="Project 1" class="card-img-top">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">PROXMOX</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">SFTP Server</div>
+                                        <div class="badge bg-primary rounded-pill">Virtualization</div>
+                                        <div class="badge bg-primary rounded-pill">Containerization</div>
+                                    </div>
+                                    <p class="card-text"> A low level hypervisor</p>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3">
+                                    <a href="" targt="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
+                                        <span class="material-symbols-outlined me-1">
+                                            folder_data
+                                            </span>
+                                            Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card h-100 shadow-lg border-0 bg-light">
+                                <img src="assests/images/web.png" alt="Project 1" class="card-img-top">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">WEBSITE</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">HTML</div>
+                                        <div class="badge bg-primary rounded-pill">CSS</div>
+                                        <div class="badge bg-primary rounded-pill">Bootstrap</div>
+                                    </div>
+                                    <p class="card-text">Portfolio build with bootstrap</p>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3">
+                                    <a href="" targt="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
+                                        <span class="material-symbols-outlined me-1">
+                                            folder_data
+                                            </span>
+                                            Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <!-- <div class="card h-100 shadow-lg border-0 bg-light">
+                                <img src="assests/images/projects.jpg" alt="Project 1" class="card-img-top">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">PROXMOX</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">SFTP Server</div>
+                                        <div class="badge bg-primary rounded-pill">Virtualization</div>
+                                        <div class="badge bg-primary rounded-pill">Containerization</div>
+                                    </div>
+                                    <p class="card-text"> A low level hypervisor</p>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3">
+                                    <a href="" targt="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
+                                        <span class="material-symbols-outlined me-1">
+                                            folder_data
+                                            </span>
+                                            Source Code
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of projects-->
+                <hr>
+
+            <!-- badges -->
+            <section id="badges" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Badges & Certificates</h2>
+                        <p class="lead test-muted mb-5">
+                            a few badges and certificates along the way.
+                        </p>
+                        
+                        
+                    </div>
+
+                    <div id="carouselExampleCaptions" class="carousel slide is-static" data-bs-interval="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active " id="sap"  >
+                            <!-- <img src="assests/images/SAP/SAP_Business.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div> -->
+                            <div class="d-flex justify-content-center">
+                              <img src="assests/images/SAP/SAP_DEVOPS.png" alt="img.png">
+                          </div>
+                          </div>
+                          <div class="carousel-item" id="sapp">
+
+                              <div class="d-flex justify-content-center">
+                                <img src="assests/images/Kyndryl/Agile_Explorer.png" alt="img.png">
+                            </div>
+                            <!-- <img src="assests/images/SAP/SAP_DEVOPS.png" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                            </div> -->
+                          </div>
+                          <div class="carousel-item" id="agile">
+                            <!-- <img src="assests/images/Kyndryl/Agile_Explorer.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div> -->
+                            <div class="d-flex justify-content-center">
+                              <img src="assests/images/Kyndryl/K_DEVOPS.png" alt="img.png">
+                          </div>
+                          </div>
+                          <div class="carousel-item" id="dev">
+                            <!-- <img src="assests/images/Kyndryl/K_DEVOPS.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div> -->
+                            <div class="d-flex justify-content-center">
+                              <img src="assests/images/SAP/SAP_Business.png" alt="img.png">
+                          </div>
+                          </div>
+                          <div class="carousel-item" id="AWS">
+                            <!-- <img src="assests/images/Kyndryl/K_DEVOPS.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div> -->
+                            <div class="d-flex justify-content-center">
+                              <img src="assests/images/AWS/AWS_Essentials.png" alt="img.png">
+                          </div>
+                          </div>
+                          <div class="carousel-item" id="AWS">
+                            <!-- <img src="assests/images/Kyndryl/K_DEVOPS.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div> -->
+                            <div class="d-flex justify-content-center">
+                              <img src="assests/images/AWS/AWS_IAM.png" alt="img.png">
+                          </div>
+                          </div>
+                          <div class="carousel-item" id="AWS">
+                            <!-- <img src="assests/images/Kyndryl/K_DEVOPS.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div> -->
+                            <div class="d-flex justify-content-center">
+                              <img src="assests/images/AWS/AWS_Org.png" alt="img.png">
+                          </div>
+                          </div>
+                          <div class="carousel-item" id="AWS">
+                            <!-- <img src="assests/images/Kyndryl/K_DEVOPS.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div> -->
+                            <div class="d-flex justify-content-center">
+                              <img src="assests/images/AWS/AWS_VPC.png" alt="img.png">
+                          </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>   
+
+                
+                      
+
+            </section>
+            <!-- end of badges -->
+            <hr>
+            <!-- contact -->
+            <section id="contact" class="text-center py-5">
+                <div class="container py-5">
+                  <div class="row justify-content-center">
+                    <h2 class="fw-bold">Contact</h2>
+                    <p class="lead text-muted mb-5">
+                      Lets get in Touch!
+                    </p>
+                  </div>
+                </div>
+                <div class="container mb-5">
+                  <div class="row">
+                    <div class="col-xl-5 col-xxl-6 mb-5">
+                      <div id="map"></div>
+                    </div>
+                    <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+                      <div class="mb-5">
+                        <h6 class="text-uppercase mb-2">Address</h6>
+                        <p class="lead mb-0">Houston, Texas</p>
+                      </div>
+                      <div class="mb-5">
+                        <h6 class="text-uppercase mb-2">Phone</h6>
+                        <p class="lead mb-0">832-407-8563</p>
+                      </div>
+                      <div class="mb-5">
+                        <h6 class="text-uppercase mb-2">Email</h6>
+                        <p class="lead mb-0">agelg300@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- end of contanct  -->
+        </main>
+    </div>
+        
+
+
+    <!-- footer -->
+    <footer class="text-center py-4">
+        <div class="container px-5 mb-2"> 
+            Copyright &copy; 2024 Angel-Portfolio
+        </div>
+    </footer>
+     <!-- end of footer -->
+
+
+
+    <!-- LEAFLEFT JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assests/JS/scripts.js"></script>
+    </body>
+
+</html>
